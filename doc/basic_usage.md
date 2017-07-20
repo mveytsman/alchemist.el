@@ -185,7 +185,7 @@ candidate available like [company-mode](http://company-mode.github.io/) [provide
 ### Important Note:
 * Auto complete and jump to definition only works if your project or newly added file has been compiled.
 * If you moved the project to a different path you will need to compile it again at the current location.
-* If you compile the project inside a Docker container then the project will need to have the same path both inside the container and on the host, or you will need to run emacs inside the container.
+* If you compile the project inside a Docker container then the project will need to have the same path both inside the container and on the host, or you will need to run emacs inside the container. Alternatively, you can use a docker volume for the `_build` directory so that the container and the host don't share compiled artifacts.
 
 ## IEx
 
